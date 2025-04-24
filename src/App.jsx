@@ -5,6 +5,7 @@ import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Auth from "./components/Auth/Auth";
 import UsersList from "./components/Users/UsersList";
+import Calculator from "./components/Calculator/Calculator";
 import "./App.css";
 
 function App() {
@@ -56,6 +57,11 @@ function App() {
       <section className="api-section">
         <h2>6. Đồng bộ dữ liệu từ API (Async Thunk)</h2>
         <UsersList />
+      </section>
+
+      <section className="calculator-section">
+        <h2>8. Form tính toán đơn giản</h2>
+        <Calculator />
       </section>
     </div>
   );
