@@ -4,6 +4,7 @@ import TodoList from "./components/TodoList/TodoList";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Auth from "./components/Auth/Auth";
+import UsersList from "./components/Users/UsersList";
 import "./App.css";
 
 function App() {
@@ -50,6 +51,11 @@ function App() {
       <section className="auth-section">
         <h2>5. Quản lý user đăng nhập</h2>
         <Auth />
+      </section>
+
+      <section className="api-section">
+        <h2>6. Đồng bộ dữ liệu từ API (Async Thunk)</h2>
+        <UsersList />
       </section>
     </div>
   );
