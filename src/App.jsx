@@ -6,6 +6,7 @@ import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import Auth from "./components/Auth/Auth";
 import UsersList from "./components/Users/UsersList";
 import Calculator from "./components/Calculator/Calculator";
+import EventManagement from "./components/EventManagement/EventManagement";
 import "./App.css";
 
 function App() {
@@ -62,6 +63,11 @@ function App() {
       <section className="calculator-section">
         <h2>8. Form tính toán đơn giản</h2>
         <Calculator />
+      </section>
+
+      <section className="event-section">
+        <h2>9. Quản lý sự kiện</h2>
+        <EventManagement />
       </section>
     </div>
   );

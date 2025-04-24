@@ -6,6 +6,7 @@ import cartReducer from "./slices/cartSlice";
 import authReducer from "./slices/authSlice";
 import usersReducer from "./slices/usersSlice";
 import calculatorReducer from "./slices/calculatorSlice";
+import eventsReducer from "./slices/eventsSlice";
 
 export const store = configureStore({
   reducer: {
@@ -16,5 +17,6 @@ export const store = configureStore({
     auth: authReducer,
     users: usersReducer,
     calculator: calculatorReducer,
+    events: eventsReducer,
   },
 });
