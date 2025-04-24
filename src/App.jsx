@@ -3,14 +3,24 @@ import Counter from "./components/Counter/Counter";
 import TodoList from "./components/TodoList/TodoList";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
 import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
+import Auth from "./components/Auth/Auth";
 import "./App.css";
 
 function App() {
   const theme = useSelector((state) => state.theme.mode);
+  const isLoggedIn = useSelector((state) => state.auth.isLoggedIn);
+  const user = useSelector((state) => state.auth.user);
 
   return (
     <div className={`app ${theme}`}>
-      <ThemeToggle />
+      <div className="app-header">
+        <ThemeToggle />
+        {isLoggedIn && (
+          <div className="welcome-message">
+            Xin chào, <strong>{user.name}</strong>!
+          </div>
+        )}
+      </div>
 
       <h1>Redux Toolkit Examples</h1>
 
@@ -35,6 +45,11 @@ function App() {
       <section className="cart-section">
         <h2>4. Giỏ hàng</h2>
         <ShoppingCart />
+      </section>
+
+      <section className="auth-section">
+        <h2>5. Quản lý user đăng nhập</h2>
+        <Auth />
       </section>
     </div>
   );
