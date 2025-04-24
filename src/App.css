@@ -1,42 +1,73 @@
+/* Light theme variables */
+.light {
+  --bg-color: #ffffff;
+  --text-color: #213547;
+  --text-muted: #666;
+  --primary-color: #3182ce;
+  --primary-dark: #2b6cb0;
+  --accent-color: #e53e3e;
+  --success-color: #38a169;
+  --success-dark: #2f855a;
+  --danger-color: #e53e3e;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --item-bg: #f7fafc;
+  --button-bg: #e2e8f0;
+  --button-text: #4a5568;
+}
 #root {
-  max-width: 1280px;
+  width: 100%;
+}
+
+/* Dark theme variables */
+.dark {
+  --bg-color: #1a202c;
+  --text-color: #e2e8f0;
+  --text-muted: #a0aec0;
+  --primary-color: #4299e1;
+  --primary-dark: #3182ce;
+  --accent-color: #f56565;
+  --success-color: #48bb78;
+  --success-dark: #38a169;
+  --danger-color: #f56565;
+  --border-color: #2d3748;
+  --card-bg: #2d3748;
+  --item-bg: #4a5568;
+  --button-bg: #4a5568;
+  --button-text: #e2e8f0;
+}
+
+.app {
+  max-width: 800px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: all 0.3s ease;
+  min-height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  margin-bottom: 2rem;
+  color: var(--text-color);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  background-color: var(--card-bg);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+h2 {
+  margin-bottom: 1.5rem;
+  color: var(--text-color);
+  border-bottom: 2px solid var(--border-color);
+  padding-bottom: 0.5rem;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
+.theme-section p {
+  margin: 0.5rem 0;
 }
