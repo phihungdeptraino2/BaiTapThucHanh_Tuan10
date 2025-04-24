@@ -7,6 +7,7 @@ import Auth from "./components/Auth/Auth";
 import UsersList from "./components/Users/UsersList";
 import Calculator from "./components/Calculator/Calculator";
 import EventManagement from "./components/EventManagement/EventManagement";
+import MultiSliceExample from "./components/MultiSlice/MultiSliceExample";
 import "./App.css";
 
 function App() {
@@ -68,6 +69,11 @@ function App() {
       <section className="event-section">
         <h2>9. Quản lý sự kiện</h2>
         <EventManagement />
+      </section>
+
+      <section className="multi-slice-section">
+        <h2>10. Kết hợp nhiều slice và store</h2>
+        <MultiSliceExample />
       </section>
     </div>
   );

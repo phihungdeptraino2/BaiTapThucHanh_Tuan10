@@ -1,0 +1,41 @@
+.multi-slice-example {
+  width: 100%;
+}
+
+.multi-slice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.multi-slice-header h3 {
+  margin: 0;
+  color: var(--text-color);
+}
+
+.cart-indicator {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.multi-slice-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+.dashboard-section h4 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+@media (min-width: 992px) {
+  .multi-slice-content {
+    grid-template-columns: 2fr 1fr;
+  }
+}

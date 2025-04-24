@@ -1,0 +1,123 @@
+.user-dashboard {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-header {
+  padding: 1.5rem;
+  background-color: var(--primary-color);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.user-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid white;
+}
+
+.user-info h3 {
+  margin: 0 0 0.25rem;
+  font-size: 1.2rem;
+}
+
+.user-info p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 0.9rem;
+}
+
+.user-preferences {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+}
+
+.preference-item {
+  display: flex;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.preference-value {
+  font-weight: bold;
+}
+
+.dashboard-content {
+  padding: 1.5rem;
+}
+
+.dashboard-section {
+  margin-bottom: 2rem;
+}
+
+.dashboard-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+  border-bottom: 1px solid var(--border-color);
+  padding-bottom: 0.5rem;
+}
+
+.empty-section {
+  color: var(--text-muted);
+  font-style: italic;
+  text-align: center;
+  padding: 1rem;
+  background-color: var(--item-bg);
+  border-radius: 4px;
+}
+
+.cart-summary-list {
+  background-color: var(--item-bg);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  background-color: var(--border-color);
+  font-weight: bold;
+  color: var(--text-color);
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.summary-total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  font-weight: bold;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.dashboard-login-message {
+  text-align: center;
+  padding: 2rem;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  color: var(--text-muted);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}

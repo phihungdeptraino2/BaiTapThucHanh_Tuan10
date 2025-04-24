@@ -7,16 +7,29 @@ import authReducer from "./slices/authSlice";
 import usersReducer from "./slices/usersSlice";
 import calculatorReducer from "./slices/calculatorSlice";
 import eventsReducer from "./slices/eventsSlice";
+import productReducer from "./slices/productSlice";
 
+// Configure the Redux store
 export const store = configureStore({
   reducer: {
+    // Core app state
+    theme: themeReducer,
+    auth: authReducer,
+
+    // Feature slices
     counter: counterReducer,
     todos: todosReducer,
-    theme: themeReducer,
     cart: cartReducer,
-    auth: authReducer,
     users: usersReducer,
     calculator: calculatorReducer,
     events: eventsReducer,
+    products: productReducer,
   },
+  // Optional middleware configuration
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: false,
+    }),
+  // Enable Redux DevTools in development
+  devTools: process.env.NODE_ENV !== "production",
 });
