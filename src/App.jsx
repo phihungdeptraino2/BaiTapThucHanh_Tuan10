@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import Counter from "./components/Counter/Counter";
 import TodoList from "./components/TodoList/TodoList";
 import ThemeToggle from "./components/ThemeToggle/ThemeToggle";
-
+import ShoppingCart from "./components/ShoppingCart/ShoppingCart";
 import "./App.css";
 
 function App() {
@@ -30,6 +30,11 @@ function App() {
           Chế độ hiện tại: <strong>{theme === "light" ? "Sáng" : "Tối"}</strong>
         </p>
         <p>Bạn có thể chuyển đổi chế độ bằng nút ở trên cùng của trang.</p>
+      </section>
+
+      <section className="cart-section">
+        <h2>4. Giỏ hàng</h2>
+        <ShoppingCart />
       </section>
     </div>
   );
