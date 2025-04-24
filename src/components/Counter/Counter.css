@@ -9,14 +9,17 @@
   font-size: 1.5rem;
   font-weight: bold;
   padding: 1rem;
-  background-color: #f0f0f0;
+  background-color: var(--item-bg);
   border-radius: 8px;
   min-width: 150px;
+  color: var(--text-color);
 }
 
 .counter-controls {
   display: flex;
-  gap: 1rem;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .counter-button {
@@ -48,4 +51,52 @@
 
 .decrement:hover {
   background-color: #d32f2f;
+}
+
+.reset {
+  background-color: #ff9800;
+  color: white;
+}
+
+.reset:hover {
+  background-color: #f57c00;
+}
+
+.counter-custom {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  width: 100%;
+  max-width: 300px;
+}
+
+.counter-input {
+  flex: 1;
+  padding: 0.75rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+.counter-input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(66, 153, 225, 0.2);
+}
+
+.increment-by-amount {
+  background-color: #2196f3;
+  color: white;
+  white-space: nowrap;
+}
+
+.increment-by-amount:hover {
+  background-color: #1e88e5;
+}
+
+@media (max-width: 480px) {
+  .counter-custom {
+    flex-direction: column;
+  }
 }

@@ -26,7 +26,7 @@ function App() {
       <h1>Redux Toolkit Examples</h1>
 
       <section className="counter-section">
-        <h2>1. Counter App</h2>
+        <h2>1. Counter App (Nâng cao)</h2>
         <Counter />
       </section>
 
